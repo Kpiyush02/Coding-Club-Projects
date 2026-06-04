@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+
+        body{
+            background-color:#f0f8ff;
+            font-family:Arial, sans-serif;
+        }
+
+        form{
+            width:400px;
+            margin:30px auto;
+            padding:20px;
+            border:2px solid #333;
+            border-radius:10px;
+            background-color:white;
+        }
+
+        h2{
+            text-align:center;
+            color:darkblue;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        input{
+            width:100%;
+            padding:8px;
+            margin-top:5px;
+            border:1px solid gray;
+            border-radius:5px;
+        }
+
+        input[type="radio"]{
+            width:auto;
+        }
+
+        button{
+            background-color:green;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color:darkgreen;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <h2>Student Registration Form</h2>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+
+        <br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+
+        <br><br>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <br><br>
+
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+        <label>Gender</label><br>
+
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+
+        <br><br>
+
+        <label for="dtime">Date & Time</label>
+        <input type="datetime-local" id="dtime" name="dtime">
+
+        <br><br>
+
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time">
+
+        <br><br>
+
+        <label for="state">State</label>
+        <input type="text" id="state" name="state">
+
+        <br><br>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city">
+
+        <br><br>
+
+        <label for="file">Upload File</label>
+        <input type="file" id="file" name="file" multiple>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>

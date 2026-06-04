@@ -1,0 +1,33 @@
+#container {
+    width: 900px;
+    height: 300px;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: bisque;   
+}
+
+    #menu{
+        border:3px solid black;
+        border-radius:10px;
+        width: 250px;
+        height: 270px;
+        margin: 15px;
+        display: inline-block;
+        background-color: azure;
+        text-align: center;
+    }
+
+    img {
+      height: 200px;
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+     
+    }
+h3 {
+    margin: 2px;
+}
+ p {
+    margin:0px;
+    font-weight:normal;
+    
+ }
