@@ -1,66 +1,51 @@
-
 *{
     margin: 5px;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --bg-color: #111111;
-    --container-color:#fffffffe;
-    --card-color:yellow;
-    --text-color:black;
-    --radius: 25px;
-}
-
 body{
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-color);
-    margin-left: 30%;
-}
-h1 {
-    text-align: center;
-    padding-top: 10px;
-    font-size:  x-large;
-    font-family: cursive;
+    background-color: #111111;
+    font-family: Arial, sans-serif;
 }
 
+h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 28px;
+    font-family: cursive;
+    color: black;
+}
 
 .container{
     width: 500px;
     height: 620px;
-    background-color: var(--container-color);
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    border-radius: var(--radius);
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 25px;
 }
 
 .card{
     width: 450px;
-    height:170px;
-    background-color: var(--card-color);
-    border-radius: var(--radius);
-    align-items: center;
-    margin: auto;
-    border-width:0px 0px 3px 3px;
-    border-style:solid;
-    border-color:black;
+    height: 170px;
+    background-color: yellow;
+    border-radius: 25px;
+    margin: 20px auto;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 .title{
     text-align: center;
     color: red;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .description{
     text-align: center;
-    color: var(--text-color);
-    padding-inline: 15px;
-    font-size:large;
+    color: black;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 25px;
 }
-
