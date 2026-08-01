@@ -2,96 +2,120 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-color: #f4f8fc;
+    background: #f5f7fa;
 }
 
 .heading{
     text-align: center;
-    margin: 15px 0;
+    margin: 40px 0;
 }
 
 .heading h2{
     font-size: 38px;
-    color: #0d3b8e;
+    color: #222;
     margin-bottom: 10px;
 }
 
+.heading p{
+    color: #666;
+    font-size: 17px;
+}
+
 .main{
-    width: 1000px;
-    margin: 0 auto;
+    width: 1200px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 25px;
-    padding: 15px;
-    background-color: white;
-    border-radius: 20px;
+    padding-bottom: 50px;
 }
 
 .container1{
-    width: 300px;
-    height: 160px;
+    width: 350px;
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
     position: relative;
-    padding: 20px;
-    border-radius: 10px;
-    transition: all .3s ease;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .container1:hover{
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 .circle{
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background: white;
-    box-shadow: 0 3px 10px rgba(0,0,0,.2);
-    position: absolute;
-    top: 18px;
-    left: 10px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .4s;
+}
 
+.circle i{
+    font-size: 25px;
+    color: #ff4d4d;
+    transition: .4s;
+}
+
+.container1:hover .circle{
+    background: #ff4d4d;
+}
+
+.container1:hover .circle i{
+    color: white;
 }
 
 .card1{
-    margin-left: 75px;
+    margin-left: 80px;
+    margin-top: -50px;
 }
 
 .card1 h3{
-    font-size: 16px;
+    font-size: 22px;
     color: #222;
+    transition: .3s;
+}
+
+.container1:hover .card1 h3{
+    color: #ff4d4d;
 }
 
 .text{
-    margin-left: 75px;
-    margin-top: 8px;
+    margin-left: 80px;
+    margin-top: 15px;
 }
 
 .text p{
     color: #666;
-    line-height: 1.4;
+    line-height: 1.6;
     font-size: 15px;
-    
 }
 
-/* Hover Effects */
-
-.container1:hover .circle{
-    background: #e53935;
+@media(max-width:1200px){
+    .main{
+        width:95%;
+    }
 }
 
-.container1:hover .icon{
-    color: white;
-}
+@media(max-width:768px){
 
-.container1:hover .card1 h3{
-    color: #e53935;
+    .container1{
+        width:100%;
+    }
+
+    .heading h2{
+        font-size:30px;
+    }
+
 }
